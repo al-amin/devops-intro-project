@@ -8,12 +8,12 @@ pipeline {
         }
         stage('--test--') {
             steps {
-                sh "mvn test -f /practiceForAllianz/mavenProject/my-app"
+                sh "mvn test -f /var/lib/jenkins/workspace/PipelineProject-2/practiceForAllianz/mavenProject/my-app"
             }
         }
         stage('--package--') {
             steps {
-                sh "mvn package -f /practiceForAllianz/mavenProject/my-app"
+                sh "mvn package -f /var/lib/jenkins/workspace/PipelineProject-2/practiceForAllianz/mavenProject/my-app"
             }
         }
     }
