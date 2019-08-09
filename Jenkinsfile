@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-                sh "mvn clean -f /practiceForAllianz/mavenProject/my-app"
+                sh "mvn clean -f /var/lib/jenkins/workspace/PipelineProject-2/practiceForAllianz/mavenProject/my-app"
             }
         }
         stage('--test--') {
