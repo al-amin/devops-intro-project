@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-                sh "mvn clean"
+                sh "mvn clean -f /practiceForAllianz/mavenProject/my-app/"
             }
         }
         stage('--test--') {
             steps {
-                sh "mvn test"
+                sh "mvn test -f /practiceForAllianz/mavenProject/my-app/"
             }
         }
         stage('--package--') {
             steps {
-                sh "mvn package"
+                sh "mvn package -f /practiceForAllianz/mavenProject/my-app/"
             }
         }
     }
